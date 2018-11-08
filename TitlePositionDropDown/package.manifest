@@ -1,0 +1,24 @@
+﻿{
+  // you can define multiple editors
+  "propertyEditors": [
+    {
+      /*this must be a unique alias*/
+      "alias": "Custom.TitlePositionDropDown",
+      /*the name*/
+      "name": "Title Position",
+      /*the icon*/
+      "icon": "icon-code",
+      /*grouping for "Select editor" dialog*/
+      "group": "Rich Content",
+      /*Set to true if you want to use this property in a Macro*/
+      "isParameterEditor": true,
+      /*the HTML file we will load for the editor*/
+      "editor": {
+        "view": "~/App_Plugins/TitlePositionDropDown/views/titlepositiondropdown.html"
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/TitlePositionDropDown/titlepositiondropdown.controller.js"
+  ]
+}
